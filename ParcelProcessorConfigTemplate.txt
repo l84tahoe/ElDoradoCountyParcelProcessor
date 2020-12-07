@@ -1,0 +1,30 @@
+#-------------------------------------------------------------------------
+# ParcelProcessorConfig.txt
+#
+# Purpose: Provides the configuration settings to ParcelProcessor.py 
+#
+# Variable Descriptions: The first line must be in brackets and the name
+# is just for info, it could be named anything.
+# logFileDirectory sets the path for log files to be written.
+# logLevel sets the loggin level - (ERROR,WARNING,INFO,FINE,DEBUG)
+# emailSever is your email provider's SMTP server.
+# emailServerPort is your email provider's port
+# emailLoginName is your sender's email address
+# emailLoginPassword is your sender's password
+# emailRecipients is a single addres or list of addresses to send to
+# zipPath is where the zip file from the extract operation will reside (Must have rights)
+# parcelsDestination is the parcels featureclass you want to update. (Can be SDE or FGDB)
+# sridOut is the SRID you want the parcels to be in.
+#-------------------------------------------------------------------------
+
+[El Dorado County]
+logFileDirectory: \\share\log\folder
+logLevel: INFO
+emailSever: smtp.mail.com
+emailServerPort: 587
+emailLoginName: your@email.com
+emailLoginPassword: hunter2
+emailRecipients: first@email.com,second@email.com
+zipPath: C:\Data
+parcelsDestination: \\share\connections\MyEGDB.sde\egdb.user.edc_parcels
+sridOut: 6418
