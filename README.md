@@ -14,5 +14,5 @@ This script was set up to use the El Dorado County Feature Extraction geoprocess
 
 3. Aquires `FGDB` of all parcels in the county, converts to `in_memory` layer, and adds ownership fields.
 4. Regex comprehension begins and takes ownership information and seperates it our into `owner`, `address`, `city`, `state`, `zip`, and `country` fields.
-5. Truncates the `SDE` or `FGSB` FC, then appends new data.
+5. Truncates the `SDE` or `FGDB` FC, then appends new data.
 5. Profit!
